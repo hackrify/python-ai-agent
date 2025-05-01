@@ -30,7 +30,7 @@ planning_agent = AssistantAgent(
     After all tasks are complete, summarize the findings and end with "TERMINATE".
     """,
     model_client=OpenAIChatCompletionClient(model="gpt-4o-mini",
-        api_key="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"
+        api_key="Open AI Key"
         )
     
 )
@@ -49,7 +49,7 @@ Places_serach_agent = AssistantAgent(
     """,
     
     model_client=OpenAIChatCompletionClient(model="gpt-4o-mini",
-        api_key="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"
+        api_key="Open AI Key"
         )
 )
 
@@ -64,7 +64,7 @@ internary_build_agent = AssistantAgent(
     """,
     tools=[search_web_tool],
     model_client=OpenAIChatCompletionClient(model="gpt-4o-mini",
-        api_key="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"
+        api_key="Open AI Key"
         )
 )
 
@@ -86,7 +86,7 @@ async def main() -> None:
         [planning_agent, Places_serach_agent, internary_build_agent],
         termination_condition=termination,
         model_client=OpenAIChatCompletionClient(model="gpt-4o-mini",
-        api_key="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"
+        api_key="Open AI Key"
         ),
 
         )
